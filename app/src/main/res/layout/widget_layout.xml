@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/widget_bg"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:weightSum="3">
+
+    <!-- İFTAR SAATİ -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İFTAR"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:textColor="#9a8f7a"
+            android:letterSpacing="0.1"/>
+
+        <TextView
+            android:id="@+id/tv_iftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:39"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#8a6a14"/>
+    </LinearLayout>
+
+    <!-- GERİ SAYIM -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_countdown_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İftara Kalan"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:textColor="#9a8f7a"
+            android:letterSpacing="0.1"/>
+
+        <TextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#8a6a14"/>
+    </LinearLayout>
+
+    <!-- GÜN SAYACI -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GÜN"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:textColor="#9a8f7a"
+            android:letterSpacing="0.1"/>
+
+        <TextView
+            android:id="@+id/tv_gun_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Gün"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#8a6a14"/>
+    </LinearLayout>
+
+    <!-- Kod referansları için gizli view'lar -->
+    <TextView android:id="@+id/tv_hicri" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_gun" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_kalan" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_kadir" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_imsak_val" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_ogle_val" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_ikindi_val" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_aksam_val" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_yatsi_val" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+
+</LinearLayout>
